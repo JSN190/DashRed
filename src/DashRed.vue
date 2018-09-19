@@ -33,7 +33,7 @@ along with this program.  If not, see https://www.gnu.org/licenses.
         </main>
         <footer class="bounceInUp animated">
             <div>
-                Released under <i class="fab fa-osi"></i><a href="https://github.com/JSN190/DashRed"> GNU AGPL v3.0</a>. 
+                Released under <a href="https://github.com/JSN190/DashRed"><i class="fab fa-osi"></i> GNU AGPL v3.0</a>. 
                 Created by <a href="https://github.com/JSN190"><i class="fab fa-github"></i> JSN190</a>.
             </div>
         </footer>
