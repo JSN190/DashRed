@@ -8,7 +8,7 @@
 DashRed is a quick and easy way to get the direct links hidden behind reddit video submissions so that you can
 share them without any extra weight. It is entirely self contained and does not need to contact any API other than reddit's.
 
-![Demo GIF](https://i.imgur.com/QuDzD5t.gif)
+![Demo GIF](https://i.imgur.com/RGdiR4z.gif)
 
 Live deployment at [dashred.jsn190.io](https://dashred.jsn190.io/). Completely free and open source software, as usual.
 
