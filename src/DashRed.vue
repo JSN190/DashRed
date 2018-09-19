@@ -96,7 +96,7 @@ body {
 .wrapper {
     height: 100vh;
     width: 100vw;
-    background-color: rgb(255, 249, 249);
+    background-color: #fffdfd;
     display: flex;
     justify-content: center;
     align-items: center;
