@@ -25,7 +25,8 @@ along with this program.  If not, see https://www.gnu.org/licenses.
                     </div>
                 </div>
                 <div id="main-input-container" class="bounceInUp faster animated">
-                    <input id="main-input-url" v-model="inputUrl" placeholder="Type or paste your reddit link here...">
+                    <input id="main-input-url" v-model="inputUrl" placeholder="Type or paste your reddit link here..."
+                        @keyup.enter="submit">
                     <span id="main-input-submit" v-on:click="submit"><i class="fas fa-arrow-right"></i></span>
                 </div>
             </div>
