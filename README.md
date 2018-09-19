@@ -3,7 +3,7 @@
 ![License](https://img.shields.io/github/license/JSN190/DashRed.svg?&style=flat-square)
 ![Top Language](https://img.shields.io/github/languages/top/JSN190/DashRed.svg?&style=flat-square)
 
-DashRed is a quick and easy way to get the direct links hidden behind reddut video submissions so that you can
+DashRed is a quick and easy way to get the direct links hidden behind reddit video submissions so that you can
 share them without any extra weight. It is entirely self contained and does not need to contact any API other than reddit's.
 
 Completely free and open source software, as usual.
