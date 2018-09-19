@@ -1,9 +1,9 @@
 {
   "name": "dashred",
-  "description": "Simple webapp to get full direct URLs to reddit videos.",
+  "description": "Webapp to get full direct URLs to reddit videos.",
   "license": "AGPL-3.0-or-later",
-  "author": "John Su",
   "version": "1.0.0",
+  "author": "John Su",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
