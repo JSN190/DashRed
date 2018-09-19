@@ -1,7 +1,9 @@
 {
   "name": "dashred",
-  "version": "0.1.0",
-  "private": true,
+  "description": "Simple webapp to get full direct URLs to reddit videos.",
+  "license": "AGPL-3.0-or-later",
+  "author": "John Su",
+  "version": "1.0.0",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -16,6 +18,8 @@
     "@vue/cli-plugin-eslint": "^3.0.3",
     "@vue/cli-service": "^3.0.3",
     "@vue/eslint-config-standard": "^3.0.3",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.5.17"
   }
 }
