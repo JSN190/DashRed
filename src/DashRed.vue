@@ -31,8 +31,11 @@ along with this program.  If not, see https://www.gnu.org/licenses.
                 </div>
             </div>
         </main>
-        <footer>
-            <div></div>
+        <footer class="bounceInUp animated">
+            <div>
+                Released under <i class="fab fa-osi"></i> GNU AGPL v3.0. 
+                Created by <a href="https://github.com/JSN190"><i class="fab fa-github"></i> JSN190</a>.
+            </div>
         </footer>
     </div>
 </template>
@@ -83,6 +86,10 @@ export default {
 *  {
     box-sizing: border-box;
     font-family: Arimo, Arial, Helvetica, sans-serif;
+}
+
+body {
+    overflow: hidden;
 }
 
 .wrapper {
@@ -227,6 +234,18 @@ export default {
 
     #main-input-url {
         font-size: 18px;
+    }
+}
+
+footer{
+    position: absolute;
+    bottom: 20px;
+    font-family: Arimo, Helvetica, sans-serif;
+    font-size: 11.25px;
+    color: rgb(192, 192, 192);
+    a {
+        color: rgb(179, 179, 179);
+        text-decoration: none;
     }
 }
 </style>
