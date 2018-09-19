@@ -2,6 +2,8 @@
 ![Repository Size](https://img.shields.io/github/repo-size/JSN190/DashRed.svg?t&style=flat-square)
 ![License](https://img.shields.io/github/license/JSN190/DashRed.svg?&style=flat-square)
 ![Top Language](https://img.shields.io/github/languages/top/JSN190/DashRed.svg?&style=flat-square)
+![Website Uptime](https://img.shields.io/website-up-down-green-red/http/dashred.jsn190.io.svg?label=dashred.jsn190.io&style=flat-square)
+
 
 DashRed is a quick and easy way to get the direct links hidden behind reddit video submissions so that you can
 share them without any extra weight. It is entirely self contained and does not need to contact any API other than reddit's.
