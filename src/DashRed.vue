@@ -18,13 +18,13 @@ along with this program.  If not, see https://www.gnu.org/licenses.
     <div id="app" class="wrapper">
         <main class="main-container">
             <div class="main-group-1">
-                <div class="main-logo-tag-group zoomIn animated fast">
+                <div class="main-logo-tag-group zoomIn fast animated">
                     <div class="main-logo">Dash<span class="reddit-orange">Red</span></div>
                     <div class="main-tag-line">
                         Get direct, proper shareable links to your reddit videos.
                     </div>
                 </div>
-                <div id="main-input-container" class="bounceInUp fast animated">
+                <div id="main-input-container" class="bounceInUp animated">
                     <input id="main-input-url" v-model="inputUrl" placeholder="Type or paste your reddit link here..."
                         @keyup.enter="submit" autofocus spellcheck="false">
                     <span id="main-input-submit" v-on:click="submit"><i class="fas fa-arrow-right"></i></span>
@@ -68,7 +68,6 @@ export default {
             this.animatePreSubmit();
             const regexRedditLink = /https:\/\/(www|old).reddit.com\/r\/[a-z]+\/comments\/[a-zA-Z0-9]+\/[a-zA-Z0-9_-]+/;
             const matched = this.inputUrl.trim().match(regexRedditLink) ? this.inputUrl.match(regexRedditLink)[0] : null;
-            console.log(`${matched}.json`)
             fetch(`${matched}.json`)
             .then(response => response.json()).then(data =>
                 this.inputUrl = data[0].data.children[0].data.media.reddit_video.fallback_url)
@@ -96,7 +95,7 @@ body {
 .wrapper {
     height: 100vh;
     width: 100vw;
-    background-color: #fffdfd;
+    background-color: #f7f7f7;
     display: flex;
     justify-content: center;
     align-items: center;
