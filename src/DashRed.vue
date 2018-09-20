@@ -18,20 +18,20 @@ along with this program.  If not, see https://www.gnu.org/licenses.
     <div id="app" class="wrapper">
         <main class="main-container">
             <div class="main-group-1">
-                <div class="main-logo-tag-group zoomIn fast animated">
+                <div class="main-logo-tag-group zoomIn animate">
                     <div class="main-logo">Dash<span class="reddit-orange">Red</span></div>
                     <div class="main-tag-line">
                         Get direct, proper shareable links to your reddit videos.
                     </div>
                 </div>
-                <div id="main-input-container" class="bounceInUp animated">
+                <div id="main-input-container" class="bounceInUp animate">
                     <input id="main-input-url" v-model="inputUrl" placeholder="Type or paste your reddit link here..."
                         @keyup.enter="submit" autofocus spellcheck="false">
                     <span id="main-input-submit" v-on:click="submit"><i class="fas fa-arrow-right"></i></span>
                 </div>
             </div>
         </main>
-        <footer class="bounceInUp slow animated">
+        <footer class="fadeIn slow animate">
             <div>
                 Released under <a href="https://github.com/JSN190/DashRed"><i class="fab fa-osi"></i> GNU AGPL v3.0</a>. 
                 Created by <a href="https://github.com/JSN190"><i class="fab fa-github"></i> JSN190</a>.
@@ -73,6 +73,11 @@ export default {
                 this.inputUrl = data[0].data.children[0].data.media.reddit_video.fallback_url)
             .finally(() => this.animatePostSubmit());
         }
+    },
+    mounted: function() {
+        // Animate after page load to prevent page reload glitches
+        const animated = document.getElementsByClassName("animate");
+        setTimeout(() => Array.from(animated).forEach(element => element.classList.add("animated")), 1);
     }
 };
 </script>
