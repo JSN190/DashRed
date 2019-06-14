@@ -33,8 +33,8 @@ along with this program.  If not, see https://www.gnu.org/licenses.
         </main>
         <footer class="fadeIn slow animate">
             <div>
-                Released under <a href="https://github.com/JSN190/DashRed"><i class="fab fa-osi"></i> GNU AGPL v3.0</a>. 
-                Created by <a href="https://github.com/JSN190"><i class="fab fa-github"></i> JSN190</a>.
+                Released under <a href="https://github.com/Tyncture/DashRed"><i class="fab fa-osi"></i> GNU AGPL v3.0</a>. 
+                Created by <a href="https://github.com/Tyncture"><i class="fab fa-github"></i> Tyncture</a>.
             </div>
         </footer>
     </div>
