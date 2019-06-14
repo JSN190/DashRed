@@ -4,6 +4,8 @@
   "license": "AGPL-3.0-or-later",
   "version": "1.0.0",
   "author": "John Su",
+  "homepage": "https://dashred.tyncture.dev/",
+  "repository": "github:Tyncture/dashred",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
