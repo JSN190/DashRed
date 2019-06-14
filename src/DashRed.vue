@@ -25,9 +25,13 @@ along with this program.  If not, see https://www.gnu.org/licenses.
                     </div>
                 </div>
                 <div id="main-input-container" class="bounceInUp animate">
-                    <input id="main-input-url" v-model="inputUrl" placeholder="Type or paste your reddit link here..."
+                    <div>
+                        <input id="main-input-url" v-model="inputUrl" placeholder="Type or paste your reddit link here..."
                         @keyup.enter="submit" autofocus spellcheck="false">
-                    <span id="main-input-submit" v-on:click="submit"><i class="fas fa-arrow-right"></i></span>
+                    </div>
+                    <div>
+                        <div id="main-input-submit" v-on:click="submit"><i class="fas fa-arrow-right"></i></div>
+                    </div>
                 </div>
             </div>
         </main>
@@ -89,12 +93,8 @@ export default {
 @import url("https://use.fontawesome.com/releases/v5.3.1/css/all.css");
 
 *  {
-    box-sizing: border-box;
     font-family: Arimo, Arial, Helvetica, sans-serif;
-}
-
-body {
-    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .wrapper {
@@ -104,7 +104,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
 .main-container {
@@ -149,20 +148,25 @@ body {
     width: 550px;
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-#main-input-url {
-    width: 100%;
-    line-height: 0;
-    padding: 8px 47px 8px 8px;
     border-radius: 1px;
     border: 0.25px solid #E8E8E8;
     box-shadow: 1px 1px 10px #E8E8E8;
     background-color: rgb(255, 254, 254);
-    color: #484848;
-    font-size: 23px;
+    :first-child {
+        flex-grow: 1;
+    }
+}
 
+#main-input-url {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #484848;
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    height: 100%;
+    padding: 8px 0px 8px 8px;
     &:active,
     &:focus {
         outline: none;
@@ -174,19 +178,18 @@ body {
 }
 
 #main-input-submit {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
-    margin-left: -2.5em;
     align-items: center;
     background-color: rgb(255, 106, 106);
     color: white;
-    border-radius: 50% !important;
-    width: 2em;
-    height: 2em;
+    border-radius: 100% !important;
     padding: 10px;
+    margin: 5px;
+    font-size: 12px;
     transition: background-color 100ms ease-in-out;
     &:hover {
-        background-color: rgb(250, 116, 116);
+        background-color: rgb(255, 89, 89);
         cursor: pointer;
     }
 }
@@ -197,7 +200,6 @@ body {
     background-color: white !important;
     border-top: 2px solid rgb(255, 215, 215) !important;
     box-shadow: none !important;
-    margin-left: -2.25em !important;
     animation-name: spin;
     animation-duration: 900ms;
     animation-iteration-count: infinite;
@@ -225,12 +227,12 @@ body {
     }
 
     .main-logo {
-        font-size: 22vw;
-        line-height: 22vw;
+        font-size: 20vw;
+        line-height: 20vw;
     }
 
     .main-tag-line {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     #main-input-container {
@@ -238,11 +240,11 @@ body {
     }
 
     #main-input-url {
-        font-size: 18px;
+        font-size: 3vh;
     }
 }
 
-footer{
+footer {
     position: absolute;
     bottom: 20px;
     font-family: Arimo, Helvetica, sans-serif;
