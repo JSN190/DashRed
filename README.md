@@ -1,20 +1,21 @@
 # DashRed
-![Repository Size](https://img.shields.io/github/repo-size/JSN190/DashRed.svg?t&style=flat-square)
-![License](https://img.shields.io/github/license/JSN190/DashRed.svg?&style=flat-square)
-![Top Language](https://img.shields.io/github/languages/top/JSN190/DashRed.svg?&style=flat-square)
-![Website Uptime](https://img.shields.io/website-up-down-green-red/http/dashred.jsn190.io.svg?label=dashred.jsn190.io&style=flat-square)
+![Repository Size](https://img.shields.io/github/repo-size/Tyncture/DashRed.svg?t&style=flat-square)
+![License](https://img.shields.io/github/license/Tyncture/DashRed.svg?&style=flat-square)
+![Top Language](https://img.shields.io/github/languages/top/Tyncture/DashRed.svg?&style=flat-square)
+![Website Uptime](https://img.shields.io/website-up-down-green-red/http/dashred.tyncture.dev.svg?label=dashred.tyncture.dev&style=flat-square)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/abdf2337-a67d-4ffc-ab74-d7f620ea2883/deploy-status)](https://app.netlify.com/sites/affectionate-villani-0cc474/deploys)
 
 
 DashRed is a quick and easy way to get the direct links hidden behind reddit video submissions so that you can
-share them without any extra weight. It is self contained and does not need to contact any API other than reddit's.
+share them without any extra bloat. It is self contained and does not need to contact any API other than reddit's.
 
 ![Demo GIF](https://i.imgur.com/RGdiR4z.gif)
 
-Live deployment at [dashred.jsn190.io](https://dashred.jsn190.io/). Completely free and open source software, as usual.
+Live deployment at [dashred.tyncture.dev](https://dashred.tyncture.dev/). Completely free and open source software.
 
 ## License
 ```
-Copyright (C) 2018 John Su
+Copyright (C) 2019 John Su
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
