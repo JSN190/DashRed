@@ -181,12 +181,15 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 106, 106);
+    text-align: center;
+    background-color: rgb(250, 109, 109);
     color: white;
     border-radius: 100% !important;
-    padding: 10px;
     margin: 5px;
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 2rem;
+    height: 2rem;
     transition: background-color 100ms ease-in-out;
     &:hover {
         background-color: rgb(255, 89, 89);
