@@ -20,8 +20,7 @@ along with this program.  If not, see https://www.gnu.org/licenses.
       <div class="main-group-1">
         <div class="main-logo-tag-group zoomIn animate">
           <div class="main-logo">
-            Dash
-            <span class="reddit-orange">Red</span>
+            Dash<span class="reddit-orange">Red</span>
           </div>
           <div class="main-tag-line">Get direct, proper shareable links to your reddit videos.</div>
         </div>
