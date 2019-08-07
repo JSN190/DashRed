@@ -6,8 +6,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/abdf2337-a67d-4ffc-ab74-d7f620ea2883/deploy-status)](https://app.netlify.com/sites/affectionate-villani-0cc474/deploys)
 
 
-DashRed is a quick and easy way to get the direct links hidden behind reddit video submissions so that you can
-share them without any extra bloat. It is self contained and does not need to contact any API other than reddit's.
+DashRed is a quick and easy way to get the direct links hidden behind reddit video submissions. It is self contained and does not need to contact any API other than reddit's.
 
 ![Demo GIF](https://i.imgur.com/RGdiR4z.gif)
 
