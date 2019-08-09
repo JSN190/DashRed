@@ -123,6 +123,11 @@ export default {
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
 .wrapper {
   height: 100vh;
   width: 100vw;
