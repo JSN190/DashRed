@@ -2,8 +2,8 @@
 ![Repository Size](https://img.shields.io/github/repo-size/Tyncture/DashRed.svg?t&style=flat-square)
 ![License](https://img.shields.io/github/license/Tyncture/DashRed.svg?&style=flat-square)
 ![Top Language](https://img.shields.io/github/languages/top/Tyncture/DashRed.svg?&style=flat-square)
-![Website Uptime](https://img.shields.io/website-up-down-green-red/http/dashred.tyncture.dev.svg?label=dashred.tyncture.dev&style=flat-square)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/abdf2337-a67d-4ffc-ab74-d7f620ea2883/deploy-status)](https://app.netlify.com/sites/affectionate-villani-0cc474/deploys)
+[![Website Uptime](https://img.shields.io/website-up-down-green-red/http/dashred.tyncture.dev.svg?label=dashred.tyncture.dev&style=flat-square)](https://dashred.tyncture.dev/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/abdf2337-a67d-4ffc-ab74-d7f620ea2883/deploy-status)](https://dashred.tyncture.dev/)
 
 
 DashRed is a quick and easy way to get the direct links hidden behind reddit video submissions. It is self contained and does not need to contact any API other than reddit's.
