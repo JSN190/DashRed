@@ -126,6 +126,7 @@ export default {
 body {
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -135,6 +136,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .main-container {
