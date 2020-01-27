@@ -57,10 +57,10 @@ SOFTWARE.
       <div>
         Released under the
         <a href="https://github.com/Tyncture/DashRed">
-          <i class="fab fa-osi"></i> MIT License </a
+          <i class="fab fa-osi"></i> MIT License</a
         >. Created by
         <a href="https://github.com/Tyncture/DashRed">
-          <i class="fab fa-github"></i> Tyncture </a
+          <i class="fab fa-github"></i> Tyncture</a
         >.
       </div>
     </footer>
