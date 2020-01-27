@@ -1,7 +1,7 @@
 {
   "name": "dashred",
   "description": "Webapp to get full direct URLs to reddit videos.",
-  "license": "AGPL-3.0-or-later",
+  "license": "MIT",
   "version": "1.0.0",
   "author": "John Su",
   "homepage": "https://dashred.tyncture.dev/",
