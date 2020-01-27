@@ -93,7 +93,7 @@ export default {
         .then(
           data =>
             (this.inputUrl =
-              data[0].data.children[0].data.media.reddit_video.fallback_url)
+              data[0].data.children[0].data.crosspost_parent_list[0].media.reddit_video.fallback_url)
         )
         .finally(() => this.animatePostSubmit());
     }
