@@ -22,7 +22,9 @@ along with this program.  If not, see https://www.gnu.org/licenses.
           <div class="main-logo">
             Dash<span class="reddit-orange">Red</span>
           </div>
-          <div class="main-tag-line">Get direct, proper shareable links to your reddit videos.</div>
+          <div class="main-tag-line">
+            Get direct, proper shareable links to your reddit videos.
+          </div>
         </div>
         <div id="main-input-container" class="bounceInUp animate">
           <div>
@@ -47,12 +49,11 @@ along with this program.  If not, see https://www.gnu.org/licenses.
       <div>
         Released under
         <a href="https://github.com/Tyncture/DashRed">
-          <i class="fab fa-osi"></i> GNU AGPL v3.0
-        </a>.
-        Created by
+          <i class="fab fa-osi"></i> GNU AGPL v3.0 </a
+        >. Created by
         <a href="https://github.com/Tyncture/DashRed">
-          <i class="fab fa-github"></i> Tyncture
-        </a>.
+          <i class="fab fa-github"></i> Tyncture </a
+        >.
       </div>
     </footer>
   </div>
@@ -63,7 +64,7 @@ export default {
   name: "DashRed",
   data: function() {
     return {
-      inputUrl: ""
+      inputUrl: "",
     };
   },
   methods: {
@@ -93,10 +94,10 @@ export default {
         .then(
           data =>
             (this.inputUrl =
-              data[0].data.children[0].data.crosspost_parent_list[0].media.reddit_video.fallback_url)
+              data[0].data.children[0].data.crosspost_parent_list[0].media.reddit_video.fallback_url),
         )
         .finally(() => this.animatePostSubmit());
-    }
+    },
   },
   mounted: function() {
     // Animate after page load to prevent page reload glitches
@@ -104,11 +105,11 @@ export default {
     setTimeout(
       () =>
         Array.from(animated).forEach(element =>
-          element.classList.add("animated")
+          element.classList.add("animated"),
         ),
-      1
+      1,
     );
-  }
+  },
 };
 </script>
 
