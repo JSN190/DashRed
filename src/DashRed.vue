@@ -108,9 +108,11 @@ export default {
             if (landing.crosspost_parent_list && landing.crosspost_parent_list.length > 0) {
               fallbackUrl = landing.crosspost_parent_list[0].secure_media.reddit_video.fallback_url;
             } else if (landing.secure_media && landing.secure_media.reddit_video) {
-              fallbackUrl = landing.secure_media.reddit_video.scrubber_media_url;
+              fallbackUrl = landing.secure_media.reddit_video.fallback_url;
+              fallbackUrl = fallbackUrl ? fallbackUrl : landing.secure_media.reddit_video.scrubber_media_url;
             } else if (landing.media && landing.media.reddit_video) {
-              fallbackUrl = landing.media.reddit_video.scrubber_media_url;
+              fallbackUrl = landing.media.reddit_video.fallback_url;
+              fallbackUrl = fallbackUrl ? fallbackUrl : landing.media.reddit_video.scrubber_media_url;
             }
             this.inputUrl = fallbackUrl ? fallbackUrl : this.inputUrl;
           }
