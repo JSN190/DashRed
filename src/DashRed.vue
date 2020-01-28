@@ -99,24 +99,34 @@ export default {
         : null;
       fetch(`${matched}.json`)
         .then(response => response.json())
-        .then(
-          data => {
-            // Newer and older posts seem to have different paths/schemas
-            // But no worries, we will take care of it
-            let fallbackUrl = null;
-            const landing = data[0].data.children[0].data;
-            if (landing.crosspost_parent_list && landing.crosspost_parent_list.length > 0) {
-              fallbackUrl = landing.crosspost_parent_list[0].secure_media.reddit_video.fallback_url;
-            } else if (landing.secure_media && landing.secure_media.reddit_video) {
-              fallbackUrl = landing.secure_media.reddit_video.fallback_url;
-              fallbackUrl = fallbackUrl ? fallbackUrl : landing.secure_media.reddit_video.scrubber_media_url;
-            } else if (landing.media && landing.media.reddit_video) {
-              fallbackUrl = landing.media.reddit_video.fallback_url;
-              fallbackUrl = fallbackUrl ? fallbackUrl : landing.media.reddit_video.scrubber_media_url;
-            }
-            this.inputUrl = fallbackUrl ? fallbackUrl : this.inputUrl;
+        .then(data => {
+          // Newer and older posts seem to have different paths/schemas
+          // But no worries, we will take care of it
+          let fallbackUrl = null;
+          const landing = data[0].data.children[0].data;
+          if (
+            landing.crosspost_parent_list &&
+            landing.crosspost_parent_list.length > 0
+          ) {
+            fallbackUrl =
+              landing.crosspost_parent_list[0].secure_media.reddit_video
+                .fallback_url;
+          } else if (
+            landing.secure_media &&
+            landing.secure_media.reddit_video
+          ) {
+            fallbackUrl = landing.secure_media.reddit_video.fallback_url;
+            fallbackUrl = fallbackUrl
+              ? fallbackUrl
+              : landing.secure_media.reddit_video.scrubber_media_url;
+          } else if (landing.media && landing.media.reddit_video) {
+            fallbackUrl = landing.media.reddit_video.fallback_url;
+            fallbackUrl = fallbackUrl
+              ? fallbackUrl
+              : landing.media.reddit_video.scrubber_media_url;
           }
-        )
+          this.inputUrl = fallbackUrl ? fallbackUrl : this.inputUrl;
+        })
         .finally(() => this.animatePostSubmit());
     },
   },
