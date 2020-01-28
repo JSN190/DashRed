@@ -92,11 +92,12 @@ export default {
       inputContainer.classList.add("animated");
     },
     submit: function() {
-      this.animatePreSubmit();
       const regexRedditLink = /https:\/\/(www|old).reddit.com\/r\/[[a-zA-Z0-9]+\/comments\/[a-zA-Z0-9]+\/[a-zA-Z0-9_-]+/;
       const matched = this.inputUrl.trim().match(regexRedditLink)
         ? this.inputUrl.match(regexRedditLink)[0]
         : null;
+      if (!matched) return;
+      this.animatePreSubmit();
       fetch(`${matched}.json`)
         .then(response => response.json())
         .then(data => {
